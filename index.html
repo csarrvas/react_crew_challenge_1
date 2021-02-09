@@ -3,10 +3,147 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/main.css"/>
-  <title>Document</title>
+  <title>Shop</title>
 </head>
 <body>
+  <header class="shop__header">
+    <nav class="shop__main-nav">
+      <ul>
+        <li><span>S</span>hop.</li>
+        <li>Electronics</li>
+        <li>Fashion</li>
+        <li>Tools</li>
+        <li>Books</li>
+        <li>More
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
+            <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/>
+          </svg>
+          <ul>
+            <li>Option_1</li>
+            <li>Option_2</li>
+            <li>Option_3</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="shop__user-actions">
+      <form class="shop__search-form">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24">
+          <path d="M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z"/>
+        </svg>
+        <input type="text" placeholder="Search"/>
+      </form>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+          <path d="M20 7h-4v-3c0-2.209-1.791-4-4-4s-4 1.791-4 4v3h-4l-2 17h20l-2-17zm-11-3c0-1.654 1.346-3 3-3s3 1.346 3 3v3h-6v-3zm-4.751 18l1.529-13h2.222v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h6v1.5c0 .276.224.5.5.5s.5-.224.5-.5v-1.5h2.222l1.529 13h-15.502z"/>
+        </svg>
+        <p>0</p>
+      </div>
+      <figure>
+        <img src="assets/img/profile.jpg"/>
+      </figure>
+    </div>
+  </header>
+  <main class="shop__main-content">
+    <div class="shop__secondary-nav">
+      <ul>
+        <li>
+          <a>HOME</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
+            <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/>
+          </svg>
+        </li>
+        <li>
+          <a>KITCHEN</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
+            <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/>
+          </svg>
+        </li>
+        <li>
+          <a>TOOLS</a>
+        </li>
+      </ul>
+    </div>
+    <div class="shop__displayed-product">
+      <figure id="img-active">
+        <img src="assets/img/product_2.jpg"/>
+      </figure>
+      <div id="img-selector">
+        <figure>
+          <img src="assets/img/product_1.jpg"/>
+        </figure>
+        <figure>
+          <img src="assets/img/product_2.jpg"/>
+        </figure>
+        <figure>
+          <img src="assets/img/product_3.jpg"/>
+        </figure>
+      </div>
+      <div class="shop__product-content">
+        <h1>Swiss Made Vegetable Cutting Knife</h1>
+        <p><span>BY </span>KC COMPANY</p>
+        <div class="shop__product-cost">
+          <div>
+            <p><span>$</span>25</p>
+          </div>
+          <div>
+            <p>Save 12%</p>
+            <p>Inclusive of all Taxes</p>
+          </div>
+        </div>
+        <p class="shop__product-description">Capable of mincing, peeling & cutting, these household knives are for both professional chefs.</p>
+        <form class="shop__add-to-cart-form">
+          <label for="qty">QTY</label>
+          <select id="qty" name="qty">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <button type="submit">Add to Cart</button>
+        </form>
+        <div class="shop__product-added" style="display: none;">
+          <div>
+            <p>Your Cart</p>
+            <div>1</div>
+          </div>
+          <div>
+            <img src="assets/img/product_2.jpg"/>
+            <div>
+              <p>Swiss Made Vegetable Cutting Knife</p>
+              <div>
+                <p>QTY : 1</p>
+              </div>
+              <div>
+                <span>$</span>25
+              </div>
+            </div>
+          </div>
+          <div>
+            <button type="button">View cart</button>
+            <button type="button">Checkout</button>
+          </div>
+        </div>
+      </div>
+      <div class="shop__product-reviews">
+        <div class="shop__product-review">
+          <div>
+            <img src="assets/img/reviewer_1.jpg"/>
+            <p>Alex Parkinson</p>
+            <div>
+              <p><span>9</span>/10</p>
+            </div>
+          </div>
+          <div>
+            <span>Good Blade for Precise Cutting</span>
+            <p>Capable of mincing, peeling & cutting, these household knives are for both professional chefs. The reader will be distracted by the readable content on the page.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
   <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
