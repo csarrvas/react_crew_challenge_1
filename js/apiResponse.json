@@ -1,0 +1,21 @@
+{
+  "data": {
+    "article": {
+      "id": 1,
+      "title": "Swiss Made Vegetable Cutting Knife",
+      "seller": "KC COMPANY",
+      "price": 25,
+      "discount": 12,
+      "description": "Capable of mincing, peeling & cutting, these household knives are for both professional chefs.",
+      "imagesUrl": ["assets/img/product_1.jpg", "assets/img/product_2.jpg", "assets/img/product_3.jpg"]
+    },
+    "reviews": [
+      {
+        "reviewer": "Alex Parkinson",
+        "score": 9,
+        "review": "Good Blade for Precise Cutting",
+        "comment": "Capable of mincing, peeling & cutting, these household knives are for both professional chefs. The reader will be distracted by the readable content on the page."
+      }
+    ]
+  }
+}
